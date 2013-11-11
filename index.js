@@ -1,6 +1,7 @@
 
 (function($){
   var html = $.fn.html;
+  var addCLass = $.fn.addClass;
 
   $.fn.html = function(str, done) {
 
@@ -27,6 +28,15 @@
     // a fastdom callback
     fastdom[type](function() {
       done(html.apply(ctx, args));
+    });
+  };
+
+  $.fn.addClass = function() {
+    var args = arguments;
+    var ctx = this;
+
+    fastdom.write(function() {
+      addClass.apply(ctx, args);
     });
   };
 })(jQuery);
