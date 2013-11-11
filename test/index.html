@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mocha Tests</title>
+  <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
+</head>
+<body>
+  <div id="mocha"></div>
+  <div class="sandbox"></div>
+  <script src="../node_modules/mocha/mocha.js"></script>
+  <script src="../node_modules/chai/chai.js"></script>
+  <script src="../node_modules/sinon/lib/sinon.js"></script>
+  <script src="../node_modules/sinon/lib/sinon/match.js"></script>
+  <script src="../node_modules/sinon/lib/sinon/spy.js"></script>
+  <script src="../node_modules/sinon/lib/sinon/stub.js"></script>
+  <script>mocha.setup('tdd')</script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.js"></script>
+  <script src="../node_modules/fastdom/index.js"></script>
+  <script src="../index.js"></script>
+  <script src="setup.js"></script>
+  <script src="test.addClass.js"></script>
+  <script src="test.after.js"></script>
+  <script src="test.insertAfter.js"></script>
+  <script src="test.append.js"></script>
+  <script src="test.appendTo.js"></script>
+  <script src="test.prepend.js"></script>
+  <script src="test.prependTo.js"></script>
+  <script src="test.html.js"></script>
+  <script>
+    if (window.mochaPhantomJS) mochaPhantomJS.run();
+    else mocha.run();
+  </script>
+</body>
+</html>
