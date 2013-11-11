@@ -1,0 +1,29 @@
+{
+  "name": "jquery-fastdom",
+  "description": "Eliminates layout thrashing by batching DOM read/write operations",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha-phantomjs test/index.html"
+  },
+  "homepage": "https://github.com/wilsonpage/jquery-fastdom",
+  "author": {
+    "name": "Wilson Page",
+    "email": "wilsonpage@me.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wilsonpage/jquery-fastdom.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "~1.12.0",
+    "jshint": "~2.1.0",
+    "sinon": "~1.7.3",
+    "chai": "~1.7.2",
+    "mocha-phantomjs": "~3.1.2"
+  },
+  "dependencies": {
+    "fastdom": "~0.8.4"
+  }
+}
