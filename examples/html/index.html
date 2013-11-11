@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>jquery-fastdom: $.html</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<script src="http://wilsonpage.github.io/fastdom/index.js"></script>
+<script src="../../index.js"></script>
+</head>
+<body>
+  <div>foo</div>
+<script>
+  // Read
+  $('div').html(function(res) {
+    console.log('innerHTML: ' + res);
+
+    // Write
+    $('div').html('bar', function() {
+      console.log('dom changed');
+
+      // Read
+      $('div').html(function(res) {
+        console.log('innerHTML: ' + res);
+      });
+    });
+  });
+</script>
+</body>
+</html>
