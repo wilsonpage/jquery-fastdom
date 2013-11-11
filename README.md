@@ -15,6 +15,7 @@ $('div').html('foo', function() {
 
 ## Implemented APIs
 
+- `$.fn.addClass` - [example](http://wilsonpage.github.io/jquery-fastdom/examples/addClass)
 - `$.fn.html` - [example](http://wilsonpage.github.io/jquery-fastdom/examples/html)
 
 ## Author
