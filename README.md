@@ -1,4 +1,4 @@
-# jquery-fastdom
+# jquery-fastdom [![](https://travis-ci.org/wilsonpage/jquery-fastdom.png)](https://travis-ci.org/wilsonpage/jquery-fastdom)
 
 Wraps jQuery DOM APIs with [FastDOM](http://github.com/wilsonpage/fastdom) to eliminate layout thrashing.
 
