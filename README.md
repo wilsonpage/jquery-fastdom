@@ -13,9 +13,9 @@ $('div').html('foo', function() {
 });
 ```
 
-## Completed APIs
+## Implemented APIs
 
-- `$.fn.html`
+- `$.fn.html` - [example](http://wilsonpage.github.io/jquery-fastdom/examples/html)
 
 ## Author
 
